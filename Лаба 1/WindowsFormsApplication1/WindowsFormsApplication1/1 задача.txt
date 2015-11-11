@@ -1,0 +1,63 @@
+gsdg sdg  class gds gsd {
+
+public static void main(String[] args) {
+        int m = 5;
+        int n = 7;
+        int[][] matrix = new int[m][n];
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] = randomNumbers();
+            }
+        }
+
+        showMatrix(matrix);
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length - 1; j++) {
+                for (int k = j + 1; k < matrix[i].length; k++) {
+                    if (matrix[i][j] > matrix[i][k]) {
+                        swap(matrix, i, j, k);
+                    }
+                }
+ 
+            }
+
+            System.out.println("minimal element row-" + (i + 1) + " = " + matrix[i][0]);
+        }
+}
+ 
+int a = 5;
+
+public static int randomNumbers() 
+{
+        Random r = new Random();
+        return r.nextInt(100);
+    }
+    
+
+    public static void swap(int[][] matrix, int i, int j, int k) {
+        int tmp = matrix[i][j];
+        matrix[i][j] = matrix[i][k];
+        matrix[i][k] = tmp;
+    }
+ gdsgdsg ;
+
+    public static void showMatrix(int[][] matrix) 
+{
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (String.valueOf(matrix[i][j]).length() < 2) {
+                    System.out.print(" " + matrix[i][j] + " ");
+                } else {
+                    System.out.print(matrix[i][j] + " ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+fdsfdsf;
+}
+
+gdsgdsg
